@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: dulce-encanto
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: USE_INTEGRATION
+        value: "true"
+      - key: WHATSAPP_NUMBER
+        value: "56936672794"
+      - key: BASE_URL
+        sync: false

@@ -1,0 +1,10 @@
+{
+  "name": "dulce-encanto-webpay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tienda online Dulce Encanto con checkout seguro Webpay Plus de Transbank",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "express": "^4.21.2", "transbank-sdk": "^6.1.0" }
+}
